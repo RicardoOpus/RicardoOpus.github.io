@@ -1,30 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil Luis Ricardo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=VT323&display=swap" rel="stylesheet">
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background-color: #F7F7F7;
+        color: #222221;
+    }
+    .header {
+      background-color: #0d1013;
+        color:#F7F7F7;
+        padding: 5px;
+        font-size: 55px;
+        font-variant-caps: all-petite-caps;
+    }
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .faixa {
+        background-image: url("lines.jpg");
+        background-color: #22272E;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: rgb(226, 234, 235);
+        font-family: 'Montserrat', sans-serif;
+    }
+    /* Create three equal columns that floats next to each other */
+    .column {
+        color: rgb(226, 234, 235);
+        float: left;
+        width: 50%;
+        padding: 10px;
+      }
+    .row{
+      background-color: #22272E;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    /* Style the footer */
+    .footer {
+      background-color: #0d1013;
+      color:#F7F7F7;
+      padding: 10px;
+      text-align: center;
+    }
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+    .corners {
+      border-radius: 25px;
+      border: 2px solid #333A42;
+      background-color: #0d1013;
+      background-position: left top;
+      background-repeat: repeat;
+      padding: 20px; 
+      margin: 20px;
+      font-family: 'Source Code Pro', monospace;
+      font-size: 1rem;
+      margin-left : 55px;
+    }
+    p {
+      margin: 5px 5px 15px 25px ;
+    }
+    li {
+        margin-left : 55px;
+      }
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+      }
+    </style>
 </head>
 <body>
+    <div class="header">
+      <p style="font-weight: lighter; color: rgb(68, 68, 209); margin: 5px 5px 15px 60px;">Luis Ricardo</p>
+      <a class="active" href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+    <div class="faixa">
+
+        <h1 style="margin: 0px;font-weight: lighter">Não existe limete</h1>
+        <h3 style="font-weight: lighter;" >para onde o conhecimento pode nos levar!</h3>
+    </div>
+
+        <div class="row" ">
+            <div class="column">
+              <div class="corners">
+                <p style="font-weight: bold;"> # Sobre mim</p>
+                <p style="margin: 5px 5px 5px 55px;">Sou estudante de programação na <a href="https://www.betrybe.com/" target="_blank">Trybe</a>, <strong>front</strong> e back-end. Consiguo me manter focado em uma única tarefa por muitas horas seguidas. Além de me interessar por tecnología, sou Escritor, ilustrador. Meus hobbies são leita, música extrema (metal) e rock progressivo (70's).</p>
+              </div>
+                
+                <div class="corners" >
+                  <p style="color: aqua;">.softSkills {</p>
+                  <li>Me considero uma pessoa muito <span style="color: aqua;">criativa</span> ; 
+                  <li>tenho <span style="color: aqua;">esmero</span> com tudo que faço, estou sempre atento aos <span style="color: aqua;">detalhes</span> ;
+                  <li>consigo me <span style="color: aqua;">comunicar</span> bem, tanto verbalmente, quanto na escrita. ;
+                  <li>sei lidar com pressão e respeito <span style="color: aqua;">prazos</span> ;
+                  <p style="color: aqua;">}</p>
+                </div>
+                <div class="corners">
+                 <p style="color: mediumseagreen">.design {</p>
+                  <li>Uso o <span style="color: mediumseagreen">Photoshop</span> com proeficiência ;
+                  <li>nossões avançadas de <span style="color: mediumseagreen">Indesing</span> ;
+                  <li><span style="color: mediumseagreen">Krita</span> ;
+                  <p style="color: mediumseagreen">}</p>
+                </div>               
+                <div class="corners">
+                  <p style="color: yellowgreen">.tecnologiaProgramação {</p>
+                  <li><span style="color: yellowgreen">Estudante</span> de <span style="color: yellowgreen">Html</span> e <span style="color: yellowgreen">Css</span> ;
+                  <li><span style="color: yellowgreen">JavaScript</span>, <span style="color: yellowgreen">PHP</span> e <span style="color: yellowgreen">Phyton</span> ;
+                  <li><span style="color: yellowgreen">Node</span>; <span style="color: yellowgreen">TyperScript</span> ;
+                  <li>entusiasta das distribuições <span style="color: yellowgreen">Linux</span> ;
+                    <p  style="color: yellowgreen">}</p>
+                </div>
+            </div>
+            <div class="column">
+              <img class="center" src="./ricardo.jpg" alt="Foto de Luis Ricardo em sépia.">
+          </div>
+        </div>
+
     
-    <h1>Luis Ricardo de Sousa</h1>
 
-    <img src="./ricardo.jpg" alt="Foto de Luis Ricardo em sépia.">
-
-    <p>Estudante de programação na <a href="https://www.betrybe.com/" target="_blank">Trybe</a>, <strong>front</strong> e back-end. Escritor, ilustrador e apreciador da música extrema (metal) e rock progressivo.</p>
-
-    <li>Criatividade
-    <li>Esmero
-    <li>Atenção ao detalhes.
-    <li>Boa comunicação escrita.
-    <li>Photoshop, Indesign.
-    <li>Estudante de Html, Css, JavaScript, PHP e Phyton.
-    <li>Admirador do pinguim, entusiasta das distribuições Linux.
-
-
-    <p>Conheça os meus trabalhos como escritor:</p>
-        <a href="https://www.ricardoserafim.com.br" target="_blank">Site Ricardo Serafim</a>
+    <div class="footer">
+            <p>Conheça os meus trabalhos como escritor:</p>
+            <a href="https://www.ricardoserafim.com.br" target="_blank">Site Ricardo Serafim</a>
+    </div>
 
         
 </body>
