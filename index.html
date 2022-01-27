@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=VT323&display=swap" rel="stylesheet">
- 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <style>
     * {
@@ -19,22 +18,32 @@
         background-color: #F7F7F7;
         color: #222221;
     }
-    .header {
-      background-color: #0d1013;
-        color:#F7F7F7;
-        padding: 5px;
-        font-size: 55px;
-        font-variant-caps: all-petite-caps;
-    }
-    .topnav a {
-      float: left;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
 
+    .topnav{
+        background-color: #0d1013;
+        border: 3px solid;
+        border-color: #333A42;
+        list-style:none;
+        margin:0;
+        padding:0;
+        text-align:center;
+
+    }
+    .topnav li{
+        display:inline;
+        
+    }
+    .topnav a{
+        display:inline-block;
+
+        padding: 25px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .topnav a:hover {
+      background-color: #333A42;;
+      color: #F7F7F7;
+    }
     .faixa {
         background-image: url("lines.jpg");
         background-color: #22272E;
@@ -66,6 +75,7 @@
       color:#F7F7F7;
       padding: 10px;
       text-align: center;
+      font-family: 'Montserrat', sans-serif;
     }
     /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
     @media (max-width: 600px) {
@@ -75,7 +85,8 @@
     }
     .corners {
       border-radius: 25px;
-      border: 2px solid #333A42;
+      border: 2px solid;
+      border-color:  #333A42;
       background-color: #0d1013;
       background-position: left top;
       background-repeat: repeat;
@@ -92,74 +103,101 @@
         margin-left : 55px;
       }
     .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
       }
     </style>
 </head>
 <body>
-    <div class="header">
-      <p style="font-weight: lighter; color: rgb(68, 68, 209); margin: 5px 5px 15px 60px;">Luis Ricardo</p>
-      <a class="active" href="#home">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
+    <div class="topnav">
+      <p style="font-weight: lighter; color: #f8f8f8; margin: 19px 5px 15px 80px; float: left; font-size: 2em;">Luis Ricardo</p>
+      <a class="active" href="#sobreMim"style="color: rgb(226, 234, 235);" onclick="focoSobreMim()"># Sobre mim</a>
+      <a href="#softSkills" style="color:aqua" onclick="focoSoftSkills()"># Soft Skills</a>
+      <a href="#design" style="color: mediumseagreen;" onclick="focoDesign()"># Design</a>
+      <a href="#dev" style="color: yellowgreen;" onclick="focoDev()"># Dev</a>
+      <a href="https://www.linkedin.com/in/luis-ricardo-b1108022b/" target="_blank" style="color: rgb(226, 234, 235);"><img src="./linkedin.png" style="width: 30px; height: 30px; margin-bottom: -9px;"> Linkedin</a>
+      <a href="https://github.com/RicardoOpus" target="_blank" style="color: rgb(226, 234, 235);"><img src="./github.png" style="width: 30px; height: 30px; margin-bottom: -9px;"> Github </a>
     </div>
     <div class="faixa">
 
-        <h1 style="margin: 0px;font-weight: lighter">Não existe limete</h1>
+        <h1 style="margin: 0px;font-weight: lighter">Não existem limites</h1>
         <h3 style="font-weight: lighter;" >para onde o conhecimento pode nos levar!</h3>
     </div>
 
         <div class="row" ">
             <div class="column">
-              <div class="corners">
-                <p style="font-weight: bold;"> # Sobre mim</p>
-                <p style="margin: 5px 5px 5px 55px;">Sou estudante de programação na <a href="https://www.betrybe.com/" target="_blank">Trybe</a>, <strong>front</strong> e back-end. Consiguo me manter focado em uma única tarefa por muitas horas seguidas. Além de me interessar por tecnología, sou Escritor, ilustrador. Meus hobbies são leita, música extrema (metal) e rock progressivo (70's).</p>
+              <div class="corners" id="boxSobreMim">
+                <p id="sobreMim" style="font-weight: bold;"> # Sobre mim</p>
+                <p style="margin: 5px 5px 5px 55px;">Sou estudante de programação na <a href="https://www.betrybe.com/" target="_blank"> <span style="color: chartreuse;">Trybe</span></a>, <strong>front</strong> e <strong>back-end</strong>. Consigo me manter focado em uma única tarefa por muitas horas seguidas. Além de me interessar por tecnologia, sou Escritor e ilustrador. Meus hobbies são leitura, filmes, música extrema (metal) e rock progressivo (70's).</p>
               </div>
-                
-                <div class="corners" >
-                  <p style="color: aqua;">.softSkills {</p>
+                <div class="corners" id="boxSoftSkills">
+                  <p id="softSkills" style="color: aqua;">.softSkills {</p>
                   <li>Me considero uma pessoa muito <span style="color: aqua;">criativa</span> ; 
                   <li>tenho <span style="color: aqua;">esmero</span> com tudo que faço, estou sempre atento aos <span style="color: aqua;">detalhes</span> ;
                   <li>consigo me <span style="color: aqua;">comunicar</span> bem, tanto verbalmente, quanto na escrita. ;
                   <li>sei lidar com pressão e respeito <span style="color: aqua;">prazos</span> ;
                   <p style="color: aqua;">}</p>
                 </div>
-                <div class="corners">
-                 <p style="color: mediumseagreen">.design {</p>
+                <div class="corners" id="boxDesign">
+                 <p id="design" style="color: mediumseagreen">.design {</p>
                   <li>Uso o <span style="color: mediumseagreen">Photoshop</span> com proeficiência ;
-                  <li>nossões avançadas de <span style="color: mediumseagreen">Indesing</span> ;
+                  <li>noções avançadas de <span style="color: mediumseagreen">Indesign</span> ;
                   <li><span style="color: mediumseagreen">Krita</span> ;
                   <p style="color: mediumseagreen">}</p>
                 </div>               
-                <div class="corners">
-                  <p style="color: yellowgreen">.tecnologiaProgramação {</p>
+                <div class="corners" id="boxDev"> 
+                  <p id="dev" style="color: yellowgreen">.tecnologia&Programação {</p>
                   <li><span style="color: yellowgreen">Estudante</span> de <span style="color: yellowgreen">Html</span> e <span style="color: yellowgreen">Css</span> ;
                   <li><span style="color: yellowgreen">JavaScript</span>, <span style="color: yellowgreen">PHP</span> e <span style="color: yellowgreen">Phyton</span> ;
-                  <li><span style="color: yellowgreen">Node</span>; <span style="color: yellowgreen">TyperScript</span> ;
+                  <li><span style="color: yellowgreen">Node</span> e <span style="color: yellowgreen">TypeScript</span> ;
                   <li>entusiasta das distribuições <span style="color: yellowgreen">Linux</span> ;
                     <p  style="color: yellowgreen">}</p>
                 </div>
             </div>
             <div class="column">
-              <img class="center" src="./ricardo.jpg" alt="Foto de Luis Ricardo em sépia.">
+              <img class="center" src="./ricardo.jpg" alt="Foto de Luis Ricardo em sépia." style="border-radius: 50%">
           </div>
         </div>
 
-    
-
     <div class="footer">
-            <p>Conheça os meus trabalhos como escritor:</p>
+            <p>Conheça também os meus trabalhos como escritor</p>
             <a href="https://www.ricardoserafim.com.br" target="_blank">Site Ricardo Serafim</a>
     </div>
-
+    
+    <script>
+      function focoSobreMim() {
+        document.getElementById("boxSobreMim").style.borderColor = '#f8f8f8';
+        document.getElementById("boxSoftSkills").style.borderColor = '#333A42';
+        document.getElementById("boxDesign").style.borderColor = '#333A42';
+        document.getElementById("boxDev").style.borderColor = '#333A42';
+      }
+    </script>
+    <script>
+      function focoSoftSkills() {
+        document.getElementById("boxSobreMim").style.borderColor = '#333A42';
+        document.getElementById("boxSoftSkills").style.borderColor = 'aqua';
+        document.getElementById("boxDesign").style.borderColor = '#333A42';
+        document.getElementById("boxDev").style.borderColor = '#333A42';
+      }
+    </script>
+    <script>
+      function focoDesign() {
+        document.getElementById("boxSobreMim").style.borderColor = '#333A42';
+        document.getElementById("boxSoftSkills").style.borderColor = '#333A42';
+        document.getElementById("boxDesign").style.borderColor = 'mediumseagreen';
+        document.getElementById("boxDev").style.borderColor = '#333A42';
+      }
+    </script>
+    <script>
+      function focoDev() {
+        document.getElementById("boxSobreMim").style.borderColor = '#333A42';
+        document.getElementById("boxSoftSkills").style.borderColor = '#333A42';
+        document.getElementById("boxDesign").style.borderColor = '#333A42';
+        document.getElementById("boxDev").style.borderColor = 'yellowgreen';
+      }
+    </script>
         
 </body>
 </html>
-
-
-
-
