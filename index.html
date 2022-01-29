@@ -1,102 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=VT323&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">  
-  </head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=VT323&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./stylesheets/style.css"> 
+</head>
 <body>
-    <div class="topnav">
-      <p style="font-weight: lighter; color: #f8f8f8; margin: 19px 5px 15px 80px; float: left; font-size: 2em;">Luis Ricardo</p>
-      <a class="active" href="#sobreMim"style="color: rgb(226, 234, 235);" onclick="focoSobreMim()"># Sobre mim</a>
-      <a href="#softSkills" style="color:aqua" onclick="focoSoftSkills()"># Soft Skills</a>
-      <a href="#design" style="color: mediumseagreen;" onclick="focoDesign()"># Design</a>
-      <a href="#dev" style="color: yellowgreen;" onclick="focoDev()"># Dev</a>
-      <a href="https://www.linkedin.com/in/luis-ricardo-b1108022b/" target="_blank" style="color: rgb(226, 234, 235);"><img src="./linkedin.png" style="width: 30px; height: 30px; margin-bottom: -9px;"> Linkedin</a>
-      <a href="https://github.com/RicardoOpus" target="_blank" style="color: rgb(226, 234, 235);"><img src="./github.png" style="width: 30px; height: 30px; margin-bottom: -9px;"> Github </a>
-    </div>
-    <div class="faixa">
-        <h1 style="margin: 0px;font-weight: lighter">Não existem limites</h1>
-        <h3 style="font-weight: lighter;" >para onde o conhecimento pode nos levar!</h3>
-    </div>
-
-        <div class="row" ">
-            <div class="column">
-              <div class="corners" id="boxSobreMim">
-                <p id="sobreMim" style="font-weight: bold;"> # Sobre mim</p>
-                <p style="margin: 5px 5px 5px 55px;">Sou estudante de programação na <a href="https://www.betrybe.com/" target="_blank"> <span style="color: chartreuse;">Trybe</span></a>, <strong>front</strong> e <strong>back-end</strong>. Consigo me manter focado em uma única tarefa por muitas horas seguidas. Além de me interessar por tecnologia, sou Escritor e ilustrador. Meus hobbies são leitura, filmes, música extrema (metal) e rock progressivo (70's).</p>
-              </div>
-                <div class="corners" id="boxSoftSkills">
-                  <p id="softSkills" style="color: aqua;">.softSkills {</p>
-                  <li>Me considero uma pessoa muito <span style="color: aqua;">criativa</span> ; 
-                  <li>tenho <span style="color: aqua;">esmero</span> com tudo que faço, estou sempre atento aos <span style="color: aqua;">detalhes</span> ;
-                  <li>consigo me <span style="color: aqua;">comunicar</span> bem, tanto verbalmente, quanto na escrita ;
-                  <li>sei lidar com pressão e respeito <span style="color: aqua;">prazos</span> ;
-                  <p style="color: aqua;">}</p>
-                </div>
-                <div class="corners" id="boxDesign">
-                 <p id="design" style="color: mediumseagreen">.design {</p>
-                  <li>Uso o <span style="color: mediumseagreen">Photoshop</span> com proeficiência ;
-                  <li>noções avançadas de <span style="color: mediumseagreen">Indesign</span> ;
-                  <li><span style="color: mediumseagreen">Krita</span> ;
-                  <p style="color: mediumseagreen">}</p>
-                </div>               
-                <div class="corners" id="boxDev"> 
-                  <p id="dev" style="color: yellowgreen">.tecnologia&Programação {</p>
-                  <li><span style="color: yellowgreen">Estudante</span> de <span style="color: yellowgreen">Html</span> e <span style="color: yellowgreen">Css</span> ;
-                  <li><span style="color: yellowgreen">JavaScript</span>, <span style="color: yellowgreen">PHP</span> e <span style="color: yellowgreen">Phyton</span> ;
-                  <li><span style="color: yellowgreen">Node</span> e <span style="color: yellowgreen">TypeScript</span> ;
-                  <li>entusiasta das distribuições <span style="color: yellowgreen">Linux</span> ;
-                    <p  style="color: yellowgreen">}</p>
-                </div>
-            </div>
-            <div class="column">
-              <img class="center" src="./ricardo.jpg" alt="Foto de Luis Ricardo em sépia." style="border-radius: 50%">
-          </div>
+  <div class="topnav">
+    <p> Luis Ricardo</p>
+    <a class="active colorWhite" href="#sobreMim" onclick="focoSobreMim()"># Sobre mim</a>
+    <a class="colorBlue" href="#softSkills" onclick="focoSoftSkills()"># Soft Skills</a>
+    <a class="colorGreen" href="#design" onclick="focoDesign()"># Design</a>
+    <a class="colorYellow" href="#dev" onclick="focoDev()"># Dev</a>
+    <a class="colorWhite" href="https://www.linkedin.com/in/luis-ricardo-b1108022b/" target="_blank"><img src="./images/linkedin.png" style="width: 30px; height: 30px; margin-bottom: -9px;"> Linkedin</a>
+    <a class="colorWhite" href="https://github.com/RicardoOpus" target="_blank"><img src="./images/github.png" style="width: 30px; height: 30px; margin-bottom: -9px;"> Github </a>
+  </div>
+  <div class="faixa">
+    <h1>Não existem limites</h1>
+    <h3>para onde o conhecimento pode nos levar!</h3>
+  </div>
+    <div class="row">
+      <div class="column">
+        <div class="corners" id="boxSobreMim">
+          <h4 id="sobreMim"><strong># Sobre mim</strong></h4>
+          <p>Sou estudante de programação na <a href="https://www.betrybe.com/" target="_blank"> <span style="color: chartreuse;">Trybe</span></a>, <strong>front</strong> e <strong>back-end</strong>. Consigo me manter focado em uma única tarefa por muitas horas seguidas. Além de me interessar por tecnologia, sou Escritor e ilustrador. Meus hobbies são leitura, filmes, música extrema (metal) e rock progressivo (70's).</p>
         </div>
-
-    <div class="footer">
-            <p>Conheça também os meus trabalhos como escritor</p>
-            <a href="https://www.ricardoserafim.com.br" target="_blank" style="font-size: 1.5rem;">Site Ricardo Serafim</a>
+        <div class="corners" id="boxSoftSkills">
+          <h4 class="colorBlue" id="softSkills">.softSkills {</h4>
+          <li>Me considero uma pessoa muito <span style="color: aqua;">criativa</span> ;</li> 
+          <li>tenho <span style="color: aqua;">esmero</span> com tudo que faço, estou sempre atento aos <span style="color: aqua;">detalhes</span> ;</li>
+          <li>consigo me <span style="color: aqua;">comunicar</span> bem, tanto verbalmente, quanto na escrita ;</li>
+          <li>sei lidar com pressão e respeito <span style="color: aqua;">prazos</span> ;</li>
+          <p class="colorBlue">}</p>
+        </div>
+        <div class="corners" id="boxDesign">
+          <h4 class="colorGreen" id="design" style="color: mediumseagreen">.design {</h4>
+          <li>Uso o <span style="color: mediumseagreen">Photoshop</span> com proeficiência ;</li>
+          <li>noções avançadas de <span style="color: mediumseagreen">Indesign</span> ;</li>
+          <li><span style="color: mediumseagreen">Krita</span> ;</li>
+          <p class="colorGreen">}</p>
+        </div>               
+        <div class="corners" id="boxDev"> 
+          <h4 class="colorYellow" id="dev" style="color: yellowgreen">.tecnologia&Programação {</h4>
+          <li>Estudante de <span style="color: yellowgreen">Html</span> e <span style="color: yellowgreen">Css</span> ;</li>
+          <li>& <span style="color: yellowgreen">JavaScript</span>, <span style="color: yellowgreen">PHP</span> e <span style="color: yellowgreen">Phyton</span> ;</li>
+          <li>& <span style="color: yellowgreen">Node</span>, <span style="color: yellowgreen">TypeScript</span> ;
+          <li>entusiasta das distribuições <span style="color: yellowgreen">Linux</span> ;</li>
+          <p class="colorYellow">}</p>
+        </div>
+      </div>
+      <div class="column">
+        <img class="center imgCropCircle" src="./images/ricardo.jpg" alt="Foto de Luis Ricardo em sépia.">
+      </div>
     </div>
-    
-    <script>
-      function focoSobreMim() {
-        document.getElementById("boxSobreMim").style.borderColor = '#f8f8f8';
-        document.getElementById("boxSoftSkills").style.borderColor = '#333A42';
-        document.getElementById("boxDesign").style.borderColor = '#333A42';
-        document.getElementById("boxDev").style.borderColor = '#333A42';
-      }
-    </script>
-    <script>
-      function focoSoftSkills() {
-        document.getElementById("boxSobreMim").style.borderColor = '#333A42';
-        document.getElementById("boxSoftSkills").style.borderColor = 'aqua';
-        document.getElementById("boxDesign").style.borderColor = '#333A42';
-        document.getElementById("boxDev").style.borderColor = '#333A42';
-      }
-    </script>
-    <script>
-      function focoDesign() {
-        document.getElementById("boxSobreMim").style.borderColor = '#333A42';
-        document.getElementById("boxSoftSkills").style.borderColor = '#333A42';
-        document.getElementById("boxDesign").style.borderColor = 'mediumseagreen';
-        document.getElementById("boxDev").style.borderColor = '#333A42';
-      }
-    </script>
-    <script>
-      function focoDev() {
-        document.getElementById("boxSobreMim").style.borderColor = '#333A42';
-        document.getElementById("boxSoftSkills").style.borderColor = '#333A42';
-        document.getElementById("boxDesign").style.borderColor = '#333A42';
-        document.getElementById("boxDev").style.borderColor = 'yellowgreen';
-      }
-    </script>
-        
+  <div class="footer">
+    <p>Conheça também os meus trabalhos como escritor</p>
+    <a href="https://www.ricardoserafim.com.br" target="_blank">Site Ricardo Serafim</a>
+  </div>
+  <!-- =================== Scripts =================== -->
+  <script>
+    function focoSobreMim() {
+      document.getElementById("boxSobreMim").style.borderColor = '#f8f8f8';
+      document.getElementById("boxSoftSkills").style.borderColor = '#333A42';
+      document.getElementById("boxDesign").style.borderColor = '#333A42';
+      document.getElementById("boxDev").style.borderColor = '#333A42';
+    }
+  </script>
+  <script>
+    function focoSoftSkills() {
+      document.getElementById("boxSobreMim").style.borderColor = '#333A42';
+      document.getElementById("boxSoftSkills").style.borderColor = 'aqua';
+      document.getElementById("boxDesign").style.borderColor = '#333A42';
+      document.getElementById("boxDev").style.borderColor = '#333A42';
+    }
+  </script>
+  <script>
+    function focoDesign() {
+      document.getElementById("boxSobreMim").style.borderColor = '#333A42';
+      document.getElementById("boxSoftSkills").style.borderColor = '#333A42';
+      document.getElementById("boxDesign").style.borderColor = 'mediumseagreen';
+      document.getElementById("boxDev").style.borderColor = '#333A42';
+    }
+  </script>
+  <script>
+    function focoDev() {
+      document.getElementById("boxSobreMim").style.borderColor = '#333A42';
+      document.getElementById("boxSoftSkills").style.borderColor = '#333A42';
+      document.getElementById("boxDesign").style.borderColor = '#333A42';
+      document.getElementById("boxDev").style.borderColor = 'yellowgreen';
+    }
+  </script>
 </body>
 </html>

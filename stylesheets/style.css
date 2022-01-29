@@ -1,0 +1,152 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+background-color: #F7F7F7;
+color: #222221;
+}
+
+.topnav {
+background-color: #0d1013;
+border: 3px solid;
+border-color: #333A42;
+list-style:none;
+margin:0;
+padding:0;
+text-align:center;
+}
+
+.topnav p {
+font-weight: lighter;
+color: #f8f8f8;
+margin: 19px 5px 15px 80px;
+float: left; font-size: 2em;
+}
+
+.topnav a{
+display:inline-block;
+text-decoration: none;
+padding: 25px 16px;
+text-decoration: none;
+font-size: 17px;
+
+}
+
+.topnav a:hover {
+background-color: #333A42;;
+color: #F7F7F7;
+}
+
+.colorWhite {
+color: rgb(226, 234, 235);
+}
+
+.colorBlue {
+color:aqua;
+}
+
+.colorGreen {
+color: mediumseagreen;
+}
+
+.colorYellow {
+color: yellowgreen;
+}
+
+.faixa {
+background-image: url("../images/lines.jpg");
+padding: 30px;
+text-align: center;
+font-size: 35px;
+color: rgb(167, 216, 223);
+font-family: 'Montserrat', sans-serif;
+}
+
+.faixa h1 {
+margin: 0px;
+font-weight: lighter
+}
+.faixa h3 {
+font-weight: lighter;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+color: rgb(226, 234, 235);
+float: left;
+width: 50%;
+padding: 10px;
+}
+.row{
+background-color: #22272E;
+}
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {.column {
+width: 100%;
+}
+}
+
+.corners {
+border-radius: 25px;
+border: 2px solid;
+border-color:  #333A42;
+background-color: #0d1013;
+background-position: left top;
+background-repeat: repeat;
+padding: 20px; 
+margin: 20px;
+margin-left : 10%;
+font-family: 'Source Code Pro', monospace;
+font-size: 1rem;
+}
+
+.corners p {
+margin: 5px 5px 5px 55px;
+}
+
+.corners h4 {
+margin: 1%;
+}
+
+.imgCropCircle {
+  border-radius: 50%;
+}
+
+li {
+margin-left : 55px;
+}
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+}
+
+a {
+text-decoration: none;
+color: rgb(122, 172, 179);
+}
+
+/* Style the footer */
+.footer {
+background-color: #0d1013;
+color:#F7F7F7;
+padding: 10px;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+}
+
+.footer a {
+font-size: 1.5rem;
+color: rgb(167, 216, 223);
+}
